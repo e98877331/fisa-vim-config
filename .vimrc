@@ -102,6 +102,8 @@ Bundle 'Wombat'
 " Yank history navigation
 Bundle 'YankRing.vim'
 
+Plugin 'elzr/vim-json'
+
 " ============================================================================
 " Install plugins the first time vim runs
 
