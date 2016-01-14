@@ -437,3 +437,16 @@ augroup END
 "let g:pep8_ignore="E501,W601"
 "only the following works
 let g:syntastic_python_flake8_args="--ignore=E203,E501,W601"
+
+
+"in mac, let vim copu to clipboard (need use brew installed version to enable
+"+clipboard
+set clipboard=unnamed
+if version >= 703 
+   set conceallevel=0 
+   autocmd FileType * setlocal conceallevel=0 
+endif 
+
+"in homebrew installed vim, default is backspace=0 which compitable to vi but
+"unable to backspace
+set backspace=2
